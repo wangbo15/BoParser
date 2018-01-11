@@ -1,0 +1,7 @@
+## ignore the build dir ##
+*.class
+bin/**
+*/.idea/
+.idea/
+*.pyc
+/bin/
