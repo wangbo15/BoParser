@@ -101,7 +101,7 @@ public class JavaParser implements JavaParserConstants {
 
 	static List<Token> allTokens = new ArrayList<Token>();
 
-	public static List<Token> parseFile(String path) {
+	public static List<Token> parseFile(String path) throws ParseException{
 		allTokens.clear();
 		JavaParser parser;
 
@@ -133,7 +133,7 @@ public class JavaParser implements JavaParserConstants {
 		System.out.println(">>>>");
 	}
 	
-	public static List<Token> parseExpression(String expr) {
+	public static List<Token> parseExpression(String expr) throws ParseException{
 		assert expr != null;
 		allTokens.clear();
 		JavaParser parser;
