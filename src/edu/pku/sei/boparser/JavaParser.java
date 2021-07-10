@@ -140,12 +140,7 @@ public class JavaParser implements JavaParserConstants {
 
 		InputStream targetStream = new ByteArrayInputStream(expr.getBytes());
 		parser = new JavaParser(targetStream);
-		try {
-			parser.Expression();
-		} catch (ParseException e) {
-			e.printStackTrace();
-			return Collections.emptyList();
-		}
+		parser.Expression();		
 		return allTokens;
 	}
 
